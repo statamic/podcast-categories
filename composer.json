@@ -1,0 +1,19 @@
+{
+    "name": "statamic/podcast-categories",
+    "autoload": {
+        "psr-4": {
+            "Statamic\\PodcastCategories\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Podcast Categories",
+            "description": "Podcast Categories addon"
+        },
+        "laravel": {
+            "providers": [
+                "Statamic\\PodcastCategories\\ServiceProvider"
+            ]
+        }
+    }
+}
