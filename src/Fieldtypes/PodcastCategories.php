@@ -13,11 +13,11 @@ class PodcastCategories extends Fieldtype
         $split = explode(' » ', $value);
 
         if (count($split) > 1) {
-            $xml = '<itunes:category text="'.$split[0].'">';
-            $xml .= '<itunes:category text="'.$split[1].'"/>';
+            $xml = '<itunes:category text="'.htmlspecialchars($split[0]).'">';
+            $xml .= '<itunes:category text="'.htmlspecialchars($split[1]).'"/>';
             $xml .= '</itunes:category>';
         } else {
-            $xml = '<itunes:category text="'.$split[0].'"/>';
+            $xml = '<itunes:category text="'.htmlspecialchars($split[0]).'"/>';
         }
 
         return $xml;
