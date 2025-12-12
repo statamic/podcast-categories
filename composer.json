@@ -5,6 +5,9 @@
             "Statamic\\PodcastCategories\\": "src"
         }
     },
+    "require": {
+        "statamic/cms": "<=6.0"
+    },
     "extra": {
         "statamic": {
             "name": "Podcast Categories",
