@@ -6,11 +6,9 @@ use Statamic\Providers\AddonServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
 {
-    protected $fieldtypes = [
-        Fieldtypes\PodcastCategories::class,
-    ];
-
-    protected $scripts = [
-        __DIR__.'/../dist/js/addon.js',
+    protected $vite = [
+        'input' => ['resources/js/cp.js'],
+        'publicDirectory' => 'resources/dist',
+        'hotFile' => __DIR__.'/../resources/dist/hot',
     ];
 }

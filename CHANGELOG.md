@@ -4,6 +4,9 @@
 
 ### What's fixed
 - Ampersands and other special characters are now run through `htmlspecialchars()` to make sure the XML validates correctly.
+
+
+
 ## 1.0.0 (2021-07-29)
 
 ### What's new
